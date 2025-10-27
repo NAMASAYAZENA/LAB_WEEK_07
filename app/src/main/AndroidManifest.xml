@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.lab_week_07">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
 
     <!-- Izin lokasi -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -16,7 +16,8 @@
         <!-- ✅ Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCIyDCht9lXJI0dQINrv-HOAfyWWfE3l-A" />
+            android:value="${MAPS_API_KEY}" />
+
 
         <!-- Launcher Activity -->
         <activity
