@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lab_week_07">
 
-    <!-- STEP 10: Tambahkan permission lokasi -->
+    <!-- Izin lokasi -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
@@ -13,12 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LAB_WEEK_07">
 
-        <!-- Tambahkan ini supaya Google Maps fragment tidak crash -->
+        <!-- ✅ Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="DUMMY_KEY_FOR_NOW" />
+            android:value="AIzaSyCIyDCht9lXJI0dQINrv-HOAfyWWfE3l-A" />
 
-        <!-- STEP 11: Jadikan MapsActivity sebagai launcher -->
+        <!-- Launcher Activity -->
         <activity
             android:name=".MapsActivity"
             android:exported="true"
@@ -29,9 +29,9 @@
             </intent-filter>
         </activity>
 
+        <!-- Optional MainActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
     </application>
 </manifest>
